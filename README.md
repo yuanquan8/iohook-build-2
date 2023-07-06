@@ -1,5 +1,11 @@
 # iohook
 
+```json
+
+node build.js --runtime electron --version 19.1.9 --abi 106
+ //Put `iohook.node` and `uihook.dll` (or `.so` or `.dylib`, depending on your operating system) into the `builds` directory as expected by iohook. See again the error message for details about the directory structure.
+```
+
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
 [![Release date](https://img.shields.io/github/release-date/wilix-team/iohook?color=%230088FF)](https://github.com/wilix-team/iohook/releases/latest)
 [![GitHub Super-Linter](https://github.com/wilix-team/iohook/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
