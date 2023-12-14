@@ -4,6 +4,10 @@
 
 node build.js --runtime electron --version 19.1.9 --abi 106
  //Put `iohook.node` and `uihook.dll` (or `.so` or `.dylib`, depending on your operating system) into the `builds` directory as expected by iohook. See again the error message for details about the directory structure.
+
+
+const nodeAbi = require( 'node-abi')
+console.log(nodeAbigetAbi('18.17.'node'))
 ```
 
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
