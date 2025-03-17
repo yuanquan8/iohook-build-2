@@ -14,12 +14,12 @@ let arch = process.env.ARCH
   ? process.env.ARCH.replace('i686', 'ia32').replace('x86_64', 'x64')
   : process.arch;
 
-let gypJsPath = path.join(
+let gypJsPath = 'node-gyp'/* path.join(
   __dirname,
   'node_modules',
   '.bin',
   process.platform === 'win32' ? 'node-gyp.cmd' : 'node-gyp'
-);
+); */
 
 let files = [];
 let targets;
@@ -178,7 +178,7 @@ function build(runtime, version, abi) {
       process.env.gyp_iohook_platform = process.platform;
       process.env.gyp_iohook_arch = arch;
     }
-
+console.log(gypJsPath,args)
     let proc = spawn(gypJsPath, args, {
       env: process.env,
     });

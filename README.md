@@ -3,11 +3,12 @@
 ```json
 
 node build.js --runtime electron --version 19.1.9 --abi 106
+//  如果上面这行出现错误，请尝试执行以下命令： node-gyp全局安装，版本：v9.3.1
+node-gyp configure rebuild --target=22.3.17 --arch=x64 --dist-url=https://artifacts.electronjs.org/headers/dist --v8_enable_pointer_compression=1 --msvs_version=2022 --abi=108
  //Put `iohook.node` and `uihook.dll` (or `.so` or `.dylib`, depending on your operating system) into the `builds` directory as expected by iohook. See again the error message for details about the directory structure.
 
-
-const nodeAbi = require( 'node-abi')
-console.log(nodeAbigetAbi('18.17.'node'))
+// const nodeAbi = require( 'node-abi')
+// console.log(nodeAbigetAbi('18.17.xx'))
 ```
 
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
